@@ -1,25 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>smart ticket</title>
-    <link href="./output.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="src/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .font-inter{
-            font-family: "Inter", sans-serif;
-        }
+      .font-raleway {
+        font-family: "Raleway", sans-serif;
+      }
 
-        .font-raleway{
-            font-family: "Raleway", sans-serif;
-        }
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+      .text-green{
+        color: #1DD100;
+      }
+      .border-green{
+        border-color: #1DD100;
+      }
+      .bg-banner{
+      background-image: linear-gradient(rgba(19,19,24,0.8)0%,rgba(19,19,24,0)100%),url(images/banner.png);
+    }
+    .bg-primary{
+        background-color: #1DD100;
+    }
     </style>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="font-inter container mx-auto">
+    <header class="md:container md:mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-raleway text-lg font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="font-raleway text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 font-raleway text-lg font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-[#e8fae5] border-green px-5 text-green font-raleway font-bold text-xl">Bus <span><img src="images/bus-icon.png" alt=""></span></a>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+        <!-- banner section -->
+        <section >
+            <div class="hero h-[550px] my-7" style="background-image: url(images/banner.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="">
+                    <h1 class="mb-5 text-7xl font-extrabold ">End-to-End Travel with <br> <span class="text-green">P Paribahan</span></h1>
+                    <p class="mb-5 text-lg">Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+                    <button class="btn bg-primary border border-transparent text-xl font-bold px-7">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center gap-6 -translate-y-20">
+                <div class="flex justify-center items-center rounded-3xl border-b-4 border-green w-[308px] h-[138px] bg-white">
+                    <div class="border-dashed border-2 border-gray-300">
+                        <img src="images/people.png" alt="">
+                    </div>
+                    <div class="ms-8">
+                        <p class="font-bold text-4xl">500K+</p>
+                        <p>Registered users</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center rounded-3xl border-b-4 border-green w-[308px] h-[138px] bg-white">
+                    <div class="border-dashed border-2 border-gray-300">
+                        <img src="images/ticket-cupon.png" alt="">
+                    </div>
+                    <div class="ms-8">
+                        <p class="font-bold text-4xl">1.7 lacks</p>
+                        <p>Tickets sold</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center rounded-3xl border-b-4 border-green w-[308px] h-[138px] bg-white">
+                    <div class="border-dashed border-2 border-gray-300">
+                        <img src="images/stoppage.png" alt="">
+                    </div>
+                    <div class="ms-8">
+                        <p class="font-bold text-4xl">80K+</p>
+                        <p>Rental partners</p>
+                    </div>
+                </div>
+              </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+  </body>
 </html>
