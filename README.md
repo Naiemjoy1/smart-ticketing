@@ -1,7 +1,7 @@
-Smart Ticketing System 🎟️
+-- Smart Ticketing System 🎟️
 A modern and user-friendly smart ticketing system for purchasing bus tickets. This project is built with HTML, Tailwind CSS, and JavaScript to provide a seamless and responsive experience.
 
-Features:
+-- Features:
 Buy Tickets: Users can easily purchase bus tickets online.
 Multiple Ticket Purchase: Buy up to 4 tickets simultaneously in a single transaction.
 Seat Selection: Interactive seat selection with real-time updates. Selected seats are displayed on the right side for quick reference.
