@@ -17,7 +17,7 @@ A modern and intuitive smart ticketing system for purchasing bus tickets. This p
 ## How to Use
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/smart-ticketing-system.git
+   git clone https://github.com/naiemjoy1/smart-ticketing-system.git
    cd smart-ticketing-system
    ```
 
